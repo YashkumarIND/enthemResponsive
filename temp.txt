@@ -1,0 +1,148 @@
+home ==> iphone-mockup, image-stack, home__data, home__header, home__title, home__footer, home__title-description, home__description
+
+.iphone-mockup {
+  position: relative;
+  width: 100%; /* Set the initial width to 100% */
+  max-width: 300px; /* Add a maximum width to limit the size */
+}
+
+.image-stack {
+  position: relative;
+  width: 100%;
+}
+
+.home__data {
+  padding-top: 5rem;
+}
+
+.home__header {
+  position: relative;
+}
+
+.home__title {
+  position: absolute;
+  top: -4rem;
+  left: 1rem;
+  line-height: 6rem;
+  font-size: var(--biggest-font-size);
+  background: var(--text-gradient);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.home__subtitle {
+  font-size: var(--big-font-size);
+  margin-bottom: var(--mb-2-5);
+}
+
+.home__title-description {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1);
+}
+
+.home__description {
+  margin-bottom: var(--mb-2-5);
+  line-height: var(--text-line-height);
+}
+
+
+.image-stack {
+  position: relative;
+  width: 100%;
+}
+
+.home_image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: center;
+  margin: 20px; /* Adjust the margin to control the separation */
+  border-radius: 15px; /* Add border-radius to make it rounded */
+  opacity: 1; /* Initially, set opacity to 1 (visible) */
+}
+
+.left-tilt {
+  transform: rotate(-3deg);
+  z-index: 1;
+}
+
+.right-tilt {
+  transform: rotate(3deg);
+  z-index: 1;
+}
+
+
+input-form ==> specs section grid, section__title section__title-gradient, form-group, optional-text, radio-group, radio-button,
+radio-label, btn-20
+
+
+.section__title {
+  font-size: var(--bigger-font-size);
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+}
+
+.section__title-gradient {
+  background: var(--text-gradient);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group span.optional-text {
+  font-size: 70%; /* Make the text smaller */
+  opacity: 0.5; /* Set the opacity to make it slightly transparent */
+  margin-left: 10px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 10px;
+}
+
+.radio-group label{
+  font-size: 15px;
+}
+
+.radio-button {
+  display: flex;
+  align-items: center;
+}
+
+.radio-button input[type="radio"] {
+  display: none; /* Hide the default radio buttons */
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid #cccccc72;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+/* Style the selected radio button */
+.radio-button input[type="radio"]:checked + .radio-label {
+  background: #ffffff;
+  color: rgb(40, 40, 40);
+}
+
